@@ -12,8 +12,8 @@ for (var key in navigatorMessageMap) {
 	var version = navigatorMessageMap[key];
   
   if (platform.indexOf(key) >= 0){
-    let message = document.querySelector(`[data-version = ${version}]`);
-    message.style.display = "block";
+    document.querySelector(`[data-version = ${version}]`).style.display = "block";
 	}
 }
+
 
